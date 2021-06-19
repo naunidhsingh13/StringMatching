@@ -40,6 +40,6 @@ def KMP_StringMatching(text: str, pattern: str):
         elif j == 0:
             i += 1
         else:
-            j = pi_table[j]
+            j = pi_table[j-1]
 
     return result
